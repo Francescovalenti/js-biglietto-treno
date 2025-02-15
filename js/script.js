@@ -4,3 +4,6 @@
 let km= prompt ("Quanti km devi fare per raggingere la destinazione finale?")
 let age= prompt ("Quanti anni hai?")
 console.log(km, age);
+
+let prezzobase= * 0.21;
+let sconto= * 0;
