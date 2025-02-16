@@ -8,4 +8,24 @@ console.log(km, age);
 //prezzo del biglietto//
 
 const prezzobase=   0.21;
-let prezzototale= km * prezzobase;
+let prezzoTotale= km * prezzobase;
+
+//applicare gli sconti in base agli sconti//
+let message;
+if (age < 18) { 
+    prezzoTotale *=20 / 100;
+}
+else if (age > 65) {
+    prezzoTotale *=40 / 100;
+}
+//formula per i prezzi in decimali//
+prezzoTotale=
+    prezzoTotale.toFixed(2);
+
+    // risultato finale//
+
+    const prezzofinale = prompt (`il prezzo totale del viaggio e: ${prezzoTotale}`)
+
+    console.log(prezzoTotale)
+
+   
