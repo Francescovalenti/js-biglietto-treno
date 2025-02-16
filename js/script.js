@@ -3,7 +3,6 @@
 
 let km= prompt ("Quanti km devi fare per raggiungere la destinazione finale?");
 let age= prompt ("Quanti anni hai?");
-console.log(km, age);
 
 //prezzo del biglietto//
 
@@ -13,10 +12,10 @@ let prezzoTotale= km * prezzobase;
 //applicare gli sconti in base agli sconti//
 let message;
 if (age < 18) { 
-    prezzoTotale *=20 / 100;
+    prezzoTotale * 20  / 100;
 }
 else if (age > 65) {
-    prezzoTotale *=40 / 100;
+    prezzoTotale *40 / 100;
 }
 //formula per i prezzi in decimali//
 prezzoTotale=
@@ -24,8 +23,9 @@ prezzoTotale=
 
     // risultato finale//
 
-    const prezzofinale = prompt (`il prezzo totale del viaggio e: ${prezzoTotale}`)
+    
 
     console.log(prezzoTotale)
+    alert  (`il prezzo totale del viaggio e: ${prezzoTotale}`)
 
    
