@@ -4,6 +4,17 @@
 let km= prompt ("Quanti km devi fare per raggiungere la destinazione finale?");
 let age= prompt ("Quanti anni hai?");
 
+// if (isNaN(kmstr,agestr) === true) {
+//     console.log("Non valido,ricarica la pagina e inserire il numero");
+//   } else {
+//     const km = parseInt(kmstr);
+//     const age = parseint(agestr);
+//     console.log(kmstr,agestr);}
+
+
+
+
+
 //prezzo del biglietto//
 
 const prezzobase=   0.21;
@@ -28,4 +39,4 @@ prezzoTotale=
     console.log(prezzoTotale)
     alert  (`il prezzo totale del viaggio e: ${prezzoTotale}`)
 
-   
+    
