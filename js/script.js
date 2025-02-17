@@ -21,7 +21,7 @@ if (agestr < 18) {
     prezzoTotale= prezzoTotale - sconto;
 }
 else if (agestr > 65) {
-    let sconto = prezzoTotale * 20  / 100;
+    let sconto = prezzoTotale * 40  / 100;
     prezzoTotale= prezzoTotale - sconto;
 }
     
