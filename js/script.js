@@ -17,17 +17,21 @@ let prezzoTotale= kmstr * prezzobase;
 //applicare gli sconti in base agli sconti//
 
 if (agestr < 18) { 
-    prezzoTotale * 20  / 100;
+    let sconto = prezzoTotale * 20  / 100;
+    prezzoTotale= prezzoTotale - sconto;
 }
 else if (agestr > 65) {
-    prezzoTotale * 40 / 100;
+    let sconto = prezzoTotale * 20  / 100;
+    prezzoTotale= prezzoTotale - sconto;
 }
+    
+
 //formula per i prezzi in decimali//
 prezzoTotale=
     prezzoTotale.toFixed(2);
 
     
-if (isNaN("kmstr,agestr") === false ) {
+if (isNaN("kmstr,agestr") === true ) {
     console.log ("Non valido,ricarica la pagina e inserire il numero");
     alert  ("Non valido,ricarica la pagina e inserire il numero")
     
@@ -38,8 +42,7 @@ if (isNaN("kmstr,agestr") === false ) {
   let age = parseInt(agestr);
    console.log(kmstr,agestr);
 
-
-
+   
 
  
 
