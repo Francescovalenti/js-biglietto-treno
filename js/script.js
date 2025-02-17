@@ -21,27 +21,29 @@ if (agestr < 18) {
     prezzoTotale= prezzoTotale - sconto;
 }
 else if (agestr > 65) {
-    let sconto = prezzoTotale * 40  / 100;
+    let sconto = prezzoTotale * 20  / 100;
     prezzoTotale= prezzoTotale - sconto;
 }
-    
-
 //formula per i prezzi in decimali//
 prezzoTotale=
     prezzoTotale.toFixed(2);
 
     
-if (isNaN("kmstr,agestr") === true ) {
+if (isNaN(kmstr=true ) || isNaN(agestr=true ) ) {
     console.log ("Non valido,ricarica la pagina e inserire il numero");
-    alert  ("Non valido,ricarica la pagina e inserire il numero")
+    
+    alert  ("Non valido,ricarica la pagina e inserire il numero");
     
     
-} 
+
+
 
   let km = parseInt(kmstr);
   let age = parseInt(agestr);
    console.log(kmstr,agestr);
 
+}
+   else {
    
 
  
@@ -57,4 +59,4 @@ if (isNaN("kmstr,agestr") === true ) {
     console.log(prezzoTotale)
     alert  (`il prezzo totale del viaggio e: ${prezzoTotale}`)
 
-    
+}
