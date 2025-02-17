@@ -29,7 +29,7 @@ prezzoTotale=
     prezzoTotale.toFixed(2);
 
     
-if (isNaN(kmstr=true ) || isNaN(agestr=true ) ) {
+if (isNaN(kmstr = true) || isNaN(agestr = true)  ) {
     console.log ("Non valido,ricarica la pagina e inserire il numero");
     
     alert  ("Non valido,ricarica la pagina e inserire il numero");
