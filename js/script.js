@@ -15,27 +15,35 @@ const prezzobase=   0.21;
 let prezzoTotale= kmstr * prezzobase;
 
 //applicare gli sconti in base agli sconti//
-let message;
+
 if (agestr < 18) { 
     prezzoTotale * 20  / 100;
 }
 else if (agestr > 65) {
-    prezzoTotale *40 / 100;
+    prezzoTotale * 40 / 100;
 }
 //formula per i prezzi in decimali//
 prezzoTotale=
     prezzoTotale.toFixed(2);
 
     
-if (isNaN("kmstr,agestr") === true) {
-    alert ("Non valido,ricarica la pagina e inserire il numero");
-} else {
-   km = parseInt("kmstr");
-   age = parseInt("agestr");
-   console.log(km,age);
+if (isNaN("kmstr,agestr") === false ) {
+    console.log ("Non valido,ricarica la pagina e inserire il numero");
+    alert  ("Non valido,ricarica la pagina e inserire il numero")
+    
+    
+} 
+
+  let km = parseInt(kmstr);
+  let age = parseInt(agestr);
+   console.log(kmstr,agestr);
 
 
-}
+
+
+ 
+
+
 
   
 
