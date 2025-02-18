@@ -42,7 +42,8 @@ else if (agestr > 65) {
 }
 //formula per i prezzi in decimali//
 prezzoTotale=
-    prezzoTotale.toFixed(2);
+
+(Math.round    (prezzoTotale * 100) / 100).toFixed(2);
 
     
 
