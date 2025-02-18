@@ -4,7 +4,7 @@
 let kmstr= prompt ("Quanti km devi fare per raggiungere la destinazione finale?");
 let agestr= prompt ("Quanti anni hai?");
 
-if (isNaN(kmstr) || isNaN(agestr)  ) {
+if (isNaN(kmstr,agestr === true)  ) {
     
     
     alert  ("Non valido,ricarica la pagina e inserire il numero");
